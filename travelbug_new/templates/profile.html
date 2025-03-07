@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+</head>
+<body>
+    <div class="nav_div">
+        <nav class="nav"><h1 class="nav_head">TRAVEL BUG</h1>
+     </nav>
+   </div>
+   <h1 class="head">PROFILE</h1>
+   <div class="main_div">
+    {% for i in form %}
+    <h2 class="name"> Name: {{i.username}}</h2>
+    <h2 class="name">Email: {{i.email}}</h2>
+    <h2 class="name"> phone: {{i.phone}}</h2>
+
+
+    {% endfor %}
+   </div>
+   
+    
+</body>
+</html>

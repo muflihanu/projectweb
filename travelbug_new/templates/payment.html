@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet"  href="{% static 'css/payment.css' %}">
+</head>
+<body>
+    <div class="nav_div">
+        <nav class="nav"><h1 class="nav_head">TRAVEL BUG</h1>
+     </nav>
+   </div>
+   <h1 class="head">Payment Here.</h1>
+   <div class="main_div">
+    <form>
+        {% csrf_token %}
+        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Q3r7E9zzk94e7p" async> </script> 
+    </form>
+  
+   </div>
+   
+</body>
+</html>

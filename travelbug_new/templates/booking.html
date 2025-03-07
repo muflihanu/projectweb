@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="{% static 'css/booking.css' %}">
+</head>
+<body>
+    <div class="nav_div">
+        <nav class="nav"><h1 class="nav_head">TRAVEL BUG</h1>
+     </nav>
+   </div>
+    <div class="main_div">
+        <form  class="frm" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+      <button class="btn" type="submit">submit</button></a> 
+    </form></div>
+    
+    
+</body>
+</html>

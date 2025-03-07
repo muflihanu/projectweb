@@ -1,0 +1,131 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.header{
+    background-color:#00008B ;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    font-family: Arial, Helvetica, sans-serif;
+    color:whitesmoke;
+    font-size: 27px;
+    padding: 6px;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+li{
+   
+    
+    list-style-type: none;
+    
+    padding-right: 35px;
+    font-size: 22px;
+    
+}
+.nan_ul{
+    display: flex;
+    padding-right: 28px;
+    padding-top: 20px;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+text-decoration: underline;
+}
+.sign_up{
+    background: white;
+    color:#00008B;
+    border-radius: 6px;
+    padding: 6px;
+
+}
+.sign_up:hover{
+    background-color: #00008B;;
+    color:hsl(200, 76%, 90%);
+    
+}
+.vendor{
+    border-radius: 6px;
+    padding: 6px;
+    border: 3px solid goldenrod;
+}
+.vendor:hover{
+    
+    border: 3px solid white;
+}
+
+.section_one{
+    background-image: url('/static/images/pouch-map-toy-airplane-blue-background-with-space-writing-text_23-2147958180.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+    height: 700px;
+    width: 100%;
+}
+.hed{
+    color:#00008B;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 800px;
+    font-size: 90px;
+    font-weight: 100;
+    padding-top: 170px;
+    padding-right:90px;
+
+}
+.hed2{
+    color:#00008B;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 800px;
+    font-size: 90px;
+    font-weight: 60;
+    
+    padding-left: 120px;
+
+}
+.hed3{
+    color:#003b46;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 800px;
+    padding-left: 120px;
+    padding-top: 20px;
+}
+.img_section{
+    
+    width: 100%;
+    height: 800px;
+    background-color: aqua;
+}
+.footer{
+    background:#00008B;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    text-align: center;
+}
+.ff{
+    color: white;
+    margin-right: 70px;
+    margin-top: 10px;
+    margin-left: 100px;
+   
+}
+.ab_section{
+    height: 300px;
+    background-color: #003b46;
+}
+.ab_head{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 100px;
+}

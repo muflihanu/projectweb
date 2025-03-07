@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background:url('/static/images/ai-generated-travelling-to-thailand-advertisment-background-with-copy-space-free-photo.jpg');
+    background-repeat: no-repeat;
+background-size:cover;
+
+}
+
+.nav{
+    background: #00008B;
+    height: 60px;
+    width: 100%;
+    padding-top: 16px;
+    display: flex;
+}
+.nav_head{
+    color: aliceblue;
+    padding: 15px;
+    padding-top:10px ;
+    display: inline;
+    padding-bottom: 50px;
+}
+.head{
+    color:rgba(0, 128, 0, 0.789) ;
+    font-size: 90px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    }
+.para{
+    color: rgba(255, 255, 255, 0.856);
+    font-weight: bold;
+    font-size: 30px;
+    width: 800px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.main{
+    margin-left: 430px;
+}

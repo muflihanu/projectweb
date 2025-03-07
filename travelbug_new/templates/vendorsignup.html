@@ -1,0 +1,29 @@
+{% extends 'signup.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vendor register</title>
+    <link rel="stylesheet" href="{% static 'css/vvendorsignup.css' %}">
+</head>
+<body>
+    {% block content %} {% endblock %}
+
+    <h1 class="head">Signup Here.</h1>
+    <div class="main_div">
+        <form class="frm" method="post">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button  class="bt" type="submit">Sign up</button>
+            <div class="mini_div">
+                <p class="para">you have already have an account?</p>
+                <a  class="login"href="{% url 'vendorlogin' %}">Login</a>
+            </div>
+           
+        </form>
+    </div>
+    
+</body>
+</html>

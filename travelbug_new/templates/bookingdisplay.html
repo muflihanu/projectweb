@@ -1,0 +1,28 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking display</title>
+    <link rel="stylesheet" href="{% static 'css/bookingdisplay.css'  %}">
+</head>
+<body>
+    <nav class="nav"><h1 class="nav_head">TRAVEL BUG</h1>
+    </nav>
+    <h1 class="bhead">Booking details</h1>
+    <div class="main_div">
+    {% for i in booking %}
+<h2 class="name"> fullname: {{i.fullname}}</h3>
+    
+<h2 class="ptitle"> Package: {{i.package.title}}</h3>
+<h2 class="pprice"> RS:{{i.package.price}}</h3>
+<h3 class="ppeople">{{i.number_of_people}}</h2>
+<h3 class="pbooking">{{i.booking_date}}</h2>
+<h3 class="pphone">{{i.phone}}</h2>
+    
+{% endfor %}
+    </div>
+    
+</body>
+</html>

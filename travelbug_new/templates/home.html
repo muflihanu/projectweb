@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="{% static 'css/hhome.css' %}"/>
+</head>
+<body>
+    <header class="header">
+        <h1 class=" logo">TRAVEL BUG</h1>
+        <nav class="nav_bar">
+            <ul class="nan_ul">
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a class="sign_up" href="{% url 'signup' %}">Sign up</a></li>
+                <li><a class="vendor" href="{% url 'vendorsignup' %}">Vendor</a></li>
+
+
+
+            </ul>
+        </nav>
+        
+    </header>
+    <section class="section_one">
+        <h1 class="hed">Make your trip<br></h1>
+        <h1 class="hed2" > unforgettable.</h1>
+        <h2 class="hed3">Collecting moments, not things.</h2>
+        
+    </section>
+    <section class="img_section">
+
+        <img src="{% static 'images/photo-1707343848552-893e05dba6ac.jpg' %}" width="100%" height="800px">
+    </section>
+    <section class="ab_section">
+<h2 class="ab_head">He journey of a thousand miles begins with a single step.</h2>
+        
+    </section>
+
+    <footer class="footer">
+        <h4 class="ff">© Travelbug  2025</h4>
+        
+
+    </footer>
+</body>
+</html>

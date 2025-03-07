@@ -1,0 +1,40 @@
+{% load static %}
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user home</title>
+    <link rel="stylesheet" href="{% static 'css/userhome.css' %}">
+</head>
+<body>
+  <div class="nav_div">
+    
+     <nav class="nav"><h1 class="nav_head">TRAVEL BUG</h1>
+      <a class="profile" href="{% url 'profile' %}">Profile</a>
+      <a class="bookings" href="{% url 'bookingdisplay' %}">View Bookings</a>
+    <a class="logout" href="{% url 'userlogout' %}">Logout</a>
+  </nav>
+</div>
+ 
+    <div class="main_div">
+     
+        {% for i in package %}
+        {% if i.aprovel %}
+          <div class="mini_div">
+            <h1 class="title">{{i.title}}</h1>
+            <img class="img" src="{{i.image.url}}">
+            <h3 class="des">{{i.description}}</h3>
+            <h3 class="date"> Date: {{i.date}}</h3>
+            <h3 class="price">RS:{{i.price}}</h3>
+            <a href="{% url 'booking' i.id %}" class="btn">Book Now</a>
+          </div>
+        {% else %}  
+        <h3>note aprove</h3>
+         {% endif %}
+        {% endfor %}
+     </div>
+        
+    
+</body>
+</html>

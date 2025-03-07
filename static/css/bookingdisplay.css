@@ -1,0 +1,82 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav{
+    background: #00008B;
+    height: 60px;
+    width: 100%;
+    padding-top: 16px;
+}
+.nav_head{
+    color: aliceblue;
+    padding: 15px;
+    padding-top:50px ;
+    display: inline;
+    padding-bottom: 50px;
+    
+}
+.nav_div{
+    display: flex;
+}
+.bhead{
+color: #00008B;
+font-size: 45px;
+font-weight: bold;
+text-align: center;
+margin-bottom: 25px;
+margin-top: 15px;
+}
+.main_div{
+    text-align: center;
+    border: 3px solid #00008B;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 400px;
+    height: 400px;
+    margin-left: 560px;
+
+}
+.name{
+
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.package{
+
+    font-size: 20px;
+    margin-bottom: 10px; 
+    margin-top:20px ;
+}
+.ptitle{
+
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.pprice{
+    color: goldenrod;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.ppeople{
+
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.pbooking{
+
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.pphone{
+    color:#00008B;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}

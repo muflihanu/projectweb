@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vendor home</title>
+    <link rel="stylesheet" href="{% static 'css/vendorhome.css' %}">
+</head>
+<body>
+    <div class="nav_div">
+        <nav class="nav"><h1 class="nav_head">TRAVEL BUG</h1>
+            <a class="create" href="{% url 'vcreate' %}">Create</a>
+            <a class="view" href="{% url 'vendorbookings' %}">Bookings</a>
+            <a  class=" logout" href="{% url 'vendorlogin' %}">Logout</a>
+     </nav>
+   </div>
+
+<div class="main_div">
+    <h1 class="head">All Packages</h1>
+    {% for i in package %}
+    <div class="mini_div">
+        <h1>{{i.title}}</h1>
+        <img  class="img"src="{{i.image.url}}">
+        <h3 class="des">{{i.description}}</h3>
+        <h3 class="date">{{i.date}}</h3>
+        <div class="btn_div">
+            <form action="{% url 'vendorupdate' i.pk %}" method="post">
+                {% csrf_token %}
+                <button class="update" type="submit">update</button>
+            </form> 
+            <form method="post" action="{% url 'vendordelete' i.pk %}">
+                {% csrf_token %}
+                <button class="delt" type="submit">Delete</button>
+            </form>
+    
+        </div>
+       
+    </div>
+    {% endfor %}
+</div>
+  
+</body>
+</html>

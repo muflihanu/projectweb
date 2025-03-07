@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vendor create</title>
+    <link rel="stylesheet" href="{% static 'css/vcreate.css' %}">
+</head>
+<body>
+    <div class="nav_div">
+        <nav class="nav"><h1 class="nav_head">TRAVEL BUG</h1>
+     </nav>
+   </div>
+    <h1 class="head"> Add Packages</h1>
+    <div class="main_div">
+        <form  class="frm" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button class="btn" type="submit">submit</button>
+        </form>
+    </div>
+   
+
+</body>
+</html>
