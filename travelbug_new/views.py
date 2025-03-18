@@ -4,7 +4,7 @@ from .forms import *
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.hashers import make_password,check_password
 from django.contrib.auth import logout
-from django.contrib.auth.decorators import login_required
+
 
 
 
@@ -41,23 +41,24 @@ def signup(request):
 
 
 
-
 def userlogin(request):
     if request.method == 'POST':
         form = Userlogin(request.POST)
         if form.is_valid():
             username = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password')
-            user=Usersign_up.objects.get(username=username)
-            if check_password(password,user.password):
-                request.session['user_id']=user.id
-            return redirect('userhome') 
-            
+
+            user = Usersign_up.objects.filter(username=username).first()
+            if user and check_password(password, user.password):
+                request.session['user_id'] = user.id 
+                return redirect('userhome')
+
     else:
         form = Userlogin()
+    
     return render(request, "userlogin.html", {'form': form})
 
-@login_required
+
 def userhome(request):
     pk=Packagecreate.objects.all()
     return render(request,"userhome.html",{'package':pk})
@@ -68,7 +69,7 @@ def uselogout(request):
     return redirect('home')
 
 
-@login_required
+
 def vendorhome(request):
     vendor_id=request.session.get('vuser.id')
     pk = Packagecreate.objects.filter(vendor_id=vendor_id)
