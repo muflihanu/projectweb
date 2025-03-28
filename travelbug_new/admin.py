@@ -5,3 +5,5 @@ from .models import *
 admin.site.register(Usersign_up)
 admin.site.register(Vendorregister)
 admin.site.register(Bookingdetails)
+admin.site.register(Packagecreate)
+

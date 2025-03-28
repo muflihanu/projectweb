@@ -8,6 +8,7 @@
     height: 60px;
     width: 100%;
     padding-top: 16px;
+
 }
 .nav_head{
     color: aliceblue;
@@ -26,7 +27,7 @@ font-size: 45px;
 font-weight: bold;
 text-align: center;
 margin-bottom: 25px;
-margin-top: 15px;
+margin-top: 25px;
 }
 .main_div{
     text-align: center;
@@ -79,4 +80,22 @@ margin-top: 15px;
     font-size: 20px;
     margin-bottom: 10px;
     margin-top: 20px;
+}
+.back{
+    color: white;
+    background-color:rgba(231, 69, 11, 0.89);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 17px;
+
 }
